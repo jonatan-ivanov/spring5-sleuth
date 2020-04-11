@@ -31,15 +31,11 @@ repositories {
 
 dependencies {
     compile('org.apache.tomcat.embed:tomcat-embed-jasper:8.0.47')
-    compile('org.springframework:spring-webmvc:5.0.1.RELEASE')
-    compile('com.fasterxml.jackson.core:jackson-databind:2.9.2')
-    compile('com.auth0:auth0-spring-security-api:1.0.0-rc.3') {
-        exclude module: 'spring-security-config'
-        exclude module: 'spring-security-core'
-        exclude module: 'spring-security-web'
-    }
-    compile('org.springframework.security:spring-security-config:5.0.0.RC1')
-    compile('org.springframework.security:spring-security-web:5.0.0.RC1')
-    compile('jstl:jstl:1.2')
-    compile('org.slf4j:slf4j-jdk14:1.7.25')
+    compile('org.springframework:spring-webmvc:5.2.5.RELEASE')
+//    compile 'io.opentracing.contrib:opentracing-spring-web-starter:3.0.1'
+//    compile 'io.opentracing.contrib:opentracing-spring-cloud-starter:0.5.3'
+//    compile 'io.opentracing.contrib:opentracing-spring-zipkin-cloud-starter:0.2.0'
+    compile 'org.springframework.cloud:spring-cloud-starter-sleuth:2.2.2.RELEASE'
+    compile 'org.springframework.cloud:spring-cloud-sleuth-core:2.2.2.RELEASE'
+    compile 'org.springframework.cloud:spring-cloud-starter-zipkin:2.2.2.RELEASE'
 }

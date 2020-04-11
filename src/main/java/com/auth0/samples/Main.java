@@ -24,7 +24,7 @@ public class Main {
         if (port != null) {
             return Integer.valueOf(port);
         }
-        return 8080;
+        return 8089;
     }
 
     // based on AbstractEmbeddedServletContainerFactory
@@ -35,7 +35,8 @@ public class Main {
             tempDir.mkdir();
             tempDir.deleteOnExit();
             return tempDir.getAbsolutePath();
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
             throw new RuntimeException(
                     "Unable to create tempDir. java.io.tmpdir is set to " + System.getProperty("java.io.tmpdir"),
                     ex
