@@ -2,7 +2,7 @@
  * Copyright 2020 Expedia, Inc. All rights reserved.
  * EXPEDIA PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package com.auth0.samples.controller.config;
+package com.auth0.samples.config;
 
 import org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration;
 import org.springframework.cloud.sleuth.autoconfig.TraceAutoConfiguration;
