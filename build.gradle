@@ -2,6 +2,7 @@ group 'com.auth0.samples'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: 'idea'
 apply plugin: 'application'
 apply plugin: 'com.github.johnrengelman.shadow'
 
@@ -35,6 +36,10 @@ dependencies {
 //    compile 'io.opentracing.contrib:opentracing-spring-web-starter:3.0.1'
 //    compile 'io.opentracing.contrib:opentracing-spring-cloud-starter:0.5.3'
 //    compile 'io.opentracing.contrib:opentracing-spring-zipkin-cloud-starter:0.2.0'
+
+//    compile 'org.springframework.boot:spring-boot-starter-actuator:2.2.2.RELEASE' // unfortunately this does not work :(
+    compile 'org.springframework.boot:spring-boot-actuator:2.2.2.RELEASE'
+    compile 'org.springframework.boot:spring-boot-actuator-autoconfigure:2.2.2.RELEASE'
     compile 'org.springframework.cloud:spring-cloud-starter-sleuth:2.2.2.RELEASE'
     compile 'org.springframework.cloud:spring-cloud-sleuth-core:2.2.2.RELEASE'
     compile 'org.springframework.cloud:spring-cloud-starter-zipkin:2.2.2.RELEASE'
