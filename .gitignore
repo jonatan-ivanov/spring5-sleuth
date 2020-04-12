@@ -1,5 +1,10 @@
 .gradle/
-out/
 build/
+
 .idea/
+*.iws
+*.ipr
 *.iml
+out/
+
+.tool-versions
